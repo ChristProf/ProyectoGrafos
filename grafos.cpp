@@ -97,3 +97,22 @@ void desplegarGrafo(grafo g)
         printf("\n");
     }
 }
+
+void dfs(grafo g, int v, bool visitado[])
+{
+    printf("%d ", v);
+    visitado[v]=true;
+    for (int i = 0; i < N; i++)
+    {
+        if (g[v][i]==1)
+        {
+            if (!visitado[i])
+            {
+                dfs(g, i, visitado);
+            }
+            
+        }
+        
+    }
+    
+}

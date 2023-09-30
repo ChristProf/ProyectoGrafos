@@ -92,6 +92,7 @@ void desplegarGrafo(grafo g)
     {
         for (int i = 0; i < N; i++)
         {
+            
             printf("%d ",g[j][i]);
         }   
         printf("\n");
